@@ -53,8 +53,7 @@ function runanimation(){
           trigger:projects,
           start:"top 85%",
           end:"top 45%",
-          scrub:true,
-          // markers:true
+          scrub:true
         }
       })
     })
@@ -91,13 +90,13 @@ function runanimation(){
       ScrollTrigger.refresh();
 }
 
-window.addEventListener("DOMContentLoaded",runanimation)
+// window.addEventListener("DOMContentLoaded",runanimation)
 
-// if (document.readyState === "complete") {
-//   runanimation();
-// } else {
-//   window.addEventListener("load", runanimation);
-// }
+if (document.readyState === "complete") {
+  runanimation();
+} else {
+  window.addEventListener("load", runanimation);
+}
   
   
 
